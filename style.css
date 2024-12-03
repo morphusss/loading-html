@@ -3,6 +3,11 @@
     src: url("./assets/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
 }
 
+@keyframes spin {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -40,4 +45,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+.loading-logo{
+    animation: spin 4s linear infinite;
+}
+
+.settings-loading-logo{
+    animation: spin 3s linear infinite;
 }
